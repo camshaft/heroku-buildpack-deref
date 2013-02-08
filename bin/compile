@@ -1,0 +1,7 @@
+#!/bin/sh
+
+DEREF=$HOME/bin/deref
+
+mkdir -p `dirname $DEREF`
+curl https://raw.github.com/CamShaft/deref/master/deref -o $DEREF
+chmod +x $DEREF
