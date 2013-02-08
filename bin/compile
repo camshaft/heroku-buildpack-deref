@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DEREF=$HOME/bin/deref
+DEREF=$1/bin/deref
 
 mkdir -p `dirname $DEREF`
 curl https://raw.github.com/CamShaft/deref/master/deref -o $DEREF
