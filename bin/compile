@@ -5,3 +5,11 @@ DEREF=$HOME/bin/deref
 mkdir -p `dirname $DEREF`
 curl https://raw.github.com/CamShaft/deref/master/deref -o $DEREF
 chmod +x $DEREF
+
+if [ -x $DEREF ]; then
+  exit 0
+fi
+
+echo "deref was not installed"
+
+exit 1

@@ -1,8 +1,3 @@
 #!/bin/sh
-
-if [ -x $HOME/bin/deref ]; then
-  echo "deref installed"
-  exit 0
-fi
-
-exit 1
+echo "deref installing"
+exit 0
